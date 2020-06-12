@@ -1,0 +1,58 @@
+@import '../../styles//settings.scss';
+
+.root {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-line;
+  font-style: italic;
+
+  .delete {
+    display: none;
+  }
+
+  &:hover .delete {
+    display: inline-block;
+  }
+
+  label {
+
+    font-size: 20px;
+    font-weight: 600;
+
+    input[type="checkbox"] {
+      position: absolute;
+      margin: 0;
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+
+
+      + .icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #000000;
+        background: transparent;
+        position: relative;
+        margin-right: 20px;
+
+        i {
+          font-size: 0;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &:checked + .icon  {
+        background: $color-box;
+
+        i {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

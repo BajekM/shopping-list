@@ -1,0 +1,27 @@
+@import '../../styles//settings.scss';
+
+.root {
+  text-align: center;
+  font-family: $font-page;
+  font-weight: 700;
+  font-size: 20px;
+
+  input {
+    height: 40px;
+    font-style: italic;
+  }
+
+  button {
+    margin: 0 10px;
+    height: 40px;
+    border-radius: 5px;
+    background: $color-btn;
+    padding: 5px 10px;
+    transition: all 0.5s;
+
+    &:hover {
+      background: $color-box;
+      transition: all 0.5s;
+    }
+  }
+}

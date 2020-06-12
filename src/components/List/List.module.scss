@@ -1,0 +1,20 @@
+@import '../../styles//settings.scss';
+.root {
+  padding: 20px;
+  margin: 20px 10px;
+}
+
+.page {
+  background: $color-page;
+  min-height: 300px;
+  box-shadow: 2px 2px 5px black;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: $font-page;
+  font-style: italic;
+
+  ul {
+    list-style-type: none;
+    padding: 0 40px;
+  }
+}
