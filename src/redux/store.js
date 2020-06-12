@@ -3,7 +3,17 @@ import {combineReducers, createStore} from 'redux';
 
 // define initial state and shallow-merge initial data
 const initialState = {
-
+  title: 'Shopping List',
+  lists: [
+    {
+      name: 'Warzywa',
+      products: ['Brokuły', 'Marchewka', 'Cebula'],
+    },
+    {
+      name: 'Owoce',
+      products: ['Banany', 'Kiwi'],
+    },
+  ],
 };
 
 // define reducers
