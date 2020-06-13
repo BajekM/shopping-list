@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './List.module.scss';
 import PropTypes from 'prop-types';
-import Product from '../Product/Product';
-import ProductInput from '../ProductInput/ProductInput';
+import Product from '../Product/ProductContainer';
+import ProductInput from '../ProductInput/ProductInputContainer';
 
 class List extends React.Component {
   static propTypes = {
@@ -17,10 +17,10 @@ class List extends React.Component {
           <h2>{name}</h2>
           <ul className={styles.productList}>
             {products.map(product =>
-              <Product key={product} name={product}/>
+              <Product key={product} name={product} listId={name}/>
             )}
           </ul>
-          <ProductInput />
+          <ProductInput listId={name}/>
         </div>
       </div>
     );

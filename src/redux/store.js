@@ -1,5 +1,5 @@
 import {combineReducers, createStore} from 'redux';
-// import initialStoreData from '../data/dataStore';
+import listsReducer from './listsRedux';
 
 // define initial state and shallow-merge initial data
 const initialState = {
@@ -9,15 +9,12 @@ const initialState = {
       name: 'Warzywa',
       products: ['Brokuły', 'Marchewka', 'Cebula'],
     },
-    {
-      name: 'Owoce',
-      products: ['Banany', 'Kiwi'],
-    },
   ],
 };
 
 // define reducers
 const reducers = {
+  lists: listsReducer,
 };
 
 // add blank reducers for initial state properties without reducers

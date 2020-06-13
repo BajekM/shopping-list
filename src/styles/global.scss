@@ -7,6 +7,10 @@
 }
 
 body {
-  background: $color-background;
+  background: url('https://cdn.pixabay.com/photo/2013/07/12/19/04/basket-154317_960_720.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+  background-attachment: fixed;
 }
 
