@@ -16,7 +16,7 @@ class ListInput extends React.Component {
     const {inputValue} = this.state;
     return (
       <div className={styles.root}>
-        <input type='text' placeholder='List name' onChange={(e) => this.setState({inputValue: e.currentTarget.value})}></input>
+        <input type='text' placeholder='List name' value={inputValue} onFocus={() => this.setState({inputValue: ''})} onChange={(e) => this.setState({inputValue: e.currentTarget.value})}></input>
         <button onClick={() => lists.find(list => list.name === inputValue) || !inputValue  ? window.alert('You already have this list or you did not put new list name') : addShoppingList({
           name: inputValue,
           products: [],

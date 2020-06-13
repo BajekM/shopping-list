@@ -17,7 +17,7 @@ class ProductInput extends React.Component {
     const {inputValue} = this.state;
     return (
       <div className={styles.root}>
-        <input type='text' placeholder='Product name' onChange={(e) => this.setState({inputValue: e.currentTarget.value})}></input>
+        <input type='text' placeholder='Product name' value={inputValue} onFocus={() => this.setState({inputValue: ''})} onChange={(e) => this.setState({inputValue: e.currentTarget.value})}></input>
         <button onClick={() => (lists.find(list => list.name === listId)).products.includes(inputValue) || !inputValue  ? window.alert('You already have this product or you did not put new product name') : addNewProduct({
           name: inputValue,
           listId,
