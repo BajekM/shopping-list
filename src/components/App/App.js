@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import List from '../List/List';
+import List from '../List/ListContainer';
 import ListInput from '../ListInput/ListInputContainer';
 
 class App extends React.Component {

@@ -18,4 +18,13 @@
     list-style-type: none;
     padding: 0 40px;
   }
+
+  h2 {
+    position: relative;
+
+    i {
+      position: absolute;
+      right: 20px;
+    }
+  }
 }
